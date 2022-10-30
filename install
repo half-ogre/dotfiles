@@ -69,6 +69,25 @@ else
 fi
 
 echo ""
+echo "checking for git:"
+if [ $(brew info git | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing git:"
+  brew install git
+else 
+  echo "git already installed:" 
+  git --version
+fi
+
+echo ""
+echo "checking for GitHub Desktop:"
+if [ $(brew info --cask github | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing GitHub Desktop:"
+  brew install --cask github
+else 
+  echo "GitHub Desktop already installed" 
+fi
+
+echo ""
 echo "checking for git-delta:"
 if [ $(brew info git-delta | grep -c "Not installed") -eq 1 ]; then
   echo "Installing git-delta:"
@@ -119,10 +138,19 @@ echo ""
 echo "checking for visual-studio-code:"
 if [ $(brew info --cask visual-studio-code | grep -c "Not installed") -eq 1 ]; then
   echo "Installing visual-studio-code:"
-  brew install visual-studio-code
+  brew install --cask visual-studio-code
 else
   echo "visual-studio-code already installed:"
   code --version
+fi
+
+echo ""
+echo "checking for zoom:"
+if [ $(brew info --cask zoom | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing zoom:"
+  brew install --cask zoom
+else
+  echo "zoom already installed"
 fi
 
 # environment symlink

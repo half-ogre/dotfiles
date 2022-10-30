@@ -18,6 +18,7 @@ This is my kit (and what `./install` installs):
 - Delta highlighter for Git
 - Docker
 - Fira Code Nerd Font
+- Git
 - GitHub CLI
 - GitHub Desktop
 - Go
