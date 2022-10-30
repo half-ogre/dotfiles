@@ -1,0 +1,52 @@
+[user]
+	name = half-ogre
+	email = half-ogre@users.noreply.github.com
+[init]
+	defaultBranch = main 
+[core]
+  editor = code --wait
+  pager = delta -n -s
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED 
+[alias]
+	up = !git pull --ff-only && git submodule update --init --recursive
+	newb = checkout -b
+	torch = !git add -A && git commit -qm 'TORCH' && git reset HEAD~1 --hard && git clean -xdf
+	wip = !git add -A && git commit -m 'WIP'
+	undo = reset HEAD~1 --mixed
+	s = status --short --branch
+	l = log --oneline
+	main = checkout main
+	master = checkout master
+	default = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+	bclean = "!f() { DEFAULT=main; git branch --merged  | grep -v \" $\" | xargs git branch -d; }; f"
+  tree = log --graph --all --format=\"%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s\"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color]
+  ui = true
+[color "status"]
+  added = green
+  changed = red
+  untracked = blue
+  unmerged = yellow
+[interactive]
+  diffFilter = delta --color-only
+[push]
+  default = current
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none

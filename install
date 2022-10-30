@@ -1,0 +1,141 @@
+#!/bin/zsh
+
+echo ""
+echo "Checking for brew:"
+if [ $(brew -v | grep -c "command not found") -eq 1 ]; then
+  echo "Installing brew:"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "brew already installed:"
+  brew -v
+fi
+
+echo ""
+echo "checking for 1password:"
+if [ $(brew info --cask 1password | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing 1password:"
+  brew install --cask 1password
+else
+  echo "1password already installed"
+fi
+
+echo ""
+echo "checking for azure-cli:"
+if [ $(brew info azure-cli | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing azure-cli:"
+  brew install azure-cli
+else
+  echo "azure-cli already installed"
+  az --version
+fi
+
+echo ""
+echo "checking for docker:"
+if [ $(brew info --cask docker | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing docker:"
+  brew install --cask docker
+else
+  echo "docker already installed"
+fi
+
+echo ""
+echo "checking for dotnet:"
+if [ $(brew info dotnet | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing dotnet:"
+  brew install dotnet
+else 
+  echo "dotnet already installed:" 
+  dotnet --version
+fi
+
+echo ""
+echo "checking for font-fira-code-nerd-font:"
+if [ $(brew info --cask font-fira-code-nerd-font 2>&1 | grep -c -e "Not installed" -e "No Cask with this name exists") -eq 1 ]; then
+  echo "Installing font-fira-code-nerd-font:"
+  brew tap homebrew/cask-fonts
+  brew install --cask font-fira-code-nerd-font
+else
+  echo "font-fira-code-nerd-font already installed"
+fi
+
+echo ""
+echo "checking for gh:"
+if [ $(brew info gh | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing gh:"
+  brew install gh
+else 
+  echo "gh already installed:" 
+  gh version
+fi
+
+echo ""
+echo "checking for git-delta:"
+if [ $(brew info git-delta | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing git-delta:"
+  brew install git-delta
+else 
+  echo "git-delta already installed:" 
+  delta --version
+fi
+
+echo ""
+echo "checking for go:"
+if [ $(brew info go | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing go:"
+  brew install go
+else 
+  echo "go already installed:" 
+  go version
+fi
+
+echo ""
+echo "checking for microsoft-edge:"
+if [ $(brew info --cask microsoft-edge | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing microsoft-edge:"
+  brew install --cask microsoft-edge
+else
+  echo "microsoft-edge already installed"
+fi
+
+echo ""
+echo "checking for slack:"
+if [ $(brew info --cask slack | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing slack:"
+  brew install slack
+else
+  echo "slack already installed"
+fi
+
+echo ""
+echo "checking for starship:"
+if [ $(brew info starship | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing starship:"
+  brew install starship
+else
+  echo "starship already installed"
+fi
+
+echo ""
+echo "checking for visual-studio-code:"
+if [ $(brew info --cask visual-studio-code | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing visual-studio-code:"
+  brew install visual-studio-code
+else
+  echo "visual-studio-code already installed:"
+  code --version
+fi
+
+# environment symlink
+ln -fs "${0:a:h}/.zshenv" "${HOME}/.zshenv"
+
+# Git symlinks
+ln -fs "${0:a:h}/.gitconfig" "${HOME}/.gitconfig"
+
+# Starship symlinks
+ln -fs "${0:a:h}/.config/starship.toml" "${HOME}/.config/starship.toml"
+
+# zsh symlinks
+mkdir -p ${HOME}/.config/zsh
+ln -fs "${0:a:h}/.config/zsh/.aliases" "${HOME}/.config/zsh/.aliases"
+ln -fs "${0:a:h}/.config/zsh/.zprofile" "${HOME}/.config/zsh/.zprofile"
+ln -fs "${0:a:h}/.config/zsh/.zshrc" "${HOME}/.config/zsh/.zshrc"
