@@ -23,6 +23,7 @@ The stuff below are things I either can't automate or haven't yet spent the time
 
 ## Microsoft Edge
 - Sign in with Microsoft account to sync data
+- Make the 1Password extension visible
 - Turn on vertical tabs as any civilized person would
 - Make Edge the default browser, because it deserves that
 
