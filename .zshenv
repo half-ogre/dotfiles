@@ -5,4 +5,5 @@ export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$HOME/.dotnet/tools
