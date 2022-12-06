@@ -108,6 +108,16 @@ else
 fi
 
 echo ""
+echo "checking for jq:"
+if [ $(brew info jq | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing jq:"
+  brew install jq
+else 
+  echo "jq already installed:" 
+  jq version
+fi
+
+echo ""
 echo "checking for microsoft-edge:"
 if [ $(brew info --cask microsoft-edge | grep -c "Not installed") -eq 1 ]; then
   echo "Installing microsoft-edge:"
