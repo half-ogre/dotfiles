@@ -36,3 +36,7 @@ zstyle ':completion:*:default' menu select=2
 # === PROMPT ===
 
 eval "$(starship init zsh)"
+
+# === PATH ===
+
+export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"

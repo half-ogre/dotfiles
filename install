@@ -40,11 +40,11 @@ fi
 
 echo ""
 echo "checking for dotnet:"
-if [ $(brew info dotnet | grep -c "Not installed") -eq 1 ]; then
-  echo "Installing dotnet:"
-  brew install dotnet
+if [ $(brew info dotnet@6 | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing dotnet@6:"
+  brew install dotnet@6
 else 
-  echo "dotnet already installed:" 
+  echo "dotnet@6 already installed:" 
   dotnet --version
 fi
 
