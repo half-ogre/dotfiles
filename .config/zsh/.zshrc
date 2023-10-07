@@ -33,6 +33,10 @@ zstyle ':completion:*:default' menu select=2
 [ -f "${XDG_CONFIG_HOME}/zsh/.zshrc.local" ] && . "${XDG_CONFIG_HOME}/zsh/.zshrc.local"
 [ -f "${XDG_CONFIG_HOME}/zsh/.aliases.local" ] && . "${XDG_CONFIG_HOME}/zsh/.aliases.local"
 
+# === SECRETS ===
+
+[ -f "${XDG_CONFIG_HOME}/zsh/.zshrc.secrets" ] && . "${XDG_CONFIG_HOME}/zsh/.zshrc.secrets"
+
 # === PROMPT ===
 
 eval "$(starship init zsh)"
