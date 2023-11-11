@@ -7,7 +7,6 @@ if [ $(brew -v | grep -c "command not found") -eq 1 ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo "brew already installed:"
-  brew -v
 fi
 
 echo ""
@@ -20,13 +19,21 @@ else
 fi
 
 echo ""
+echo "checking for awscli:"
+if [ $(brew info awscli | grep -c "Not installed") -eq 1 ]; then
+  echo "Installing awscli:"
+  brew install awscli
+else
+  echo "awscli already installed"
+fi
+
+echo ""
 echo "checking for azure-cli:"
 if [ $(brew info azure-cli | grep -c "Not installed") -eq 1 ]; then
   echo "Installing azure-cli:"
   brew install azure-cli
 else
   echo "azure-cli already installed"
-  az --version
 fi
 
 echo ""
@@ -45,7 +52,6 @@ if [ $(brew info dotnet@6 | grep -c "Not installed") -eq 1 ]; then
   brew install dotnet@6
 else 
   echo "dotnet@6 already installed:" 
-  dotnet --version
 fi
 
 echo ""
@@ -65,7 +71,6 @@ if [ $(brew info gh | grep -c "Not installed") -eq 1 ]; then
   brew install gh
 else 
   echo "gh already installed:" 
-  gh version
 fi
 
 echo ""
@@ -75,7 +80,6 @@ if [ $(brew info git | grep -c "Not installed") -eq 1 ]; then
   brew install git
 else 
   echo "git already installed:" 
-  git --version
 fi
 
 echo ""
@@ -94,7 +98,6 @@ if [ $(brew info git-delta | grep -c "Not installed") -eq 1 ]; then
   brew install git-delta
 else 
   echo "git-delta already installed:" 
-  delta --version
 fi
 
 echo ""
@@ -104,7 +107,6 @@ if [ $(brew info go | grep -c "Not installed") -eq 1 ]; then
   brew install go
 else 
   echo "go already installed:" 
-  go version
 fi
 
 echo ""
@@ -114,7 +116,6 @@ if [ $(brew info jq | grep -c "Not installed") -eq 1 ]; then
   brew install jq
 else 
   echo "jq already installed:" 
-  jq version
 fi
 
 echo ""
@@ -151,7 +152,6 @@ if [ $(brew info --cask visual-studio-code | grep -c "Not installed") -eq 1 ]; t
   brew install --cask visual-studio-code
 else
   echo "visual-studio-code already installed:"
-  code --version
 fi
 
 echo ""
@@ -165,6 +165,13 @@ fi
 
 # environment symlink
 ln -fs "${0:a:h}/.zshenv" "${HOME}/.zshenv"
+
+# AWS symlinks
+if ! [ -L "${HOME}/.aws/config" ]; then
+  echo "Symlinking AWS config"
+  mkdir -p ${HOME}/.aws
+  ln -fs "${0:a:h}/.config/aws/config" "${HOME}/.aws/config"
+fi
 
 # Git symlinks
 ln -fs "${0:a:h}/.gitconfig" "${HOME}/.gitconfig"
