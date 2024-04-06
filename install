@@ -28,30 +28,12 @@ else
 fi
 
 echo ""
-echo "checking for azure-cli:"
-if [ $(brew info azure-cli | grep -c "Not installed") -eq 1 ]; then
-  echo "Installing azure-cli:"
-  brew install azure-cli
-else
-  echo "azure-cli already installed"
-fi
-
-echo ""
 echo "checking for docker:"
 if [ $(brew info --cask docker | grep -c "Not installed") -eq 1 ]; then
   echo "Installing docker:"
   brew install --cask docker
 else
   echo "docker already installed"
-fi
-
-echo ""
-echo "checking for dotnet:"
-if [ $(brew info dotnet@6 | grep -c "Not installed") -eq 1 ]; then
-  echo "Installing dotnet@6:"
-  brew install dotnet@6
-else 
-  echo "dotnet@6 already installed:" 
 fi
 
 echo ""
@@ -116,15 +98,6 @@ if [ $(brew info jq | grep -c "Not installed") -eq 1 ]; then
   brew install jq
 else 
   echo "jq already installed:" 
-fi
-
-echo ""
-echo "checking for microsoft-edge:"
-if [ $(brew info --cask microsoft-edge | grep -c "Not installed") -eq 1 ]; then
-  echo "Installing microsoft-edge:"
-  brew install --cask microsoft-edge
-else
-  echo "microsoft-edge already installed"
 fi
 
 echo ""
