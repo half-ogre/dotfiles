@@ -1,6 +1,6 @@
 # Half-Ogre's Bootstrap & Dotfiles
 
-This repo has the install script and dotfiles I use to bootstrap and configure my personal (Apple) development laptop.
+This repo has the install scripts and dotfiles I use to bootstrap and configure my personal (Apple Silicon) development laptop.
 
 ## Warnings and Other Notes
 
@@ -9,20 +9,23 @@ This repo has the install script and dotfiles I use to bootstrap and configure m
 
 ## The Goods
 
-This is my kit (and what `./install` installs):
+This is my kit (and what `./install.sh` installs):
 
 - Homebrew (duh)
-- .NET
+- .NET SDK
 - 1Password
-- Azure CLI
+- AWS CLI
 - Delta highlighter for Git
+- Discord
 - Docker
 - Fira Code Nerd Font
 - Git
 - GitHub CLI
 - GitHub Desktop
+- Google Chrome
 - Go
-- Microsoft Edge
+- jq
+- Mise
 - Slack
 - Starship.rs
 - Visual Studio Code
@@ -34,7 +37,7 @@ This isn't really designed for others to use; it's for me. That said, if you wan
 
 - Clone the repo, `cd` into the clone path
 - Change stuff that's specific to me (or needs to be specific to you), like in `.gitconfig`
-- Run `./install`
+- Run `./install.sh`
 - Manually do what you need to from [manual.md](./manual.md)
 
 ## Inspiration

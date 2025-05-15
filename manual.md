@@ -3,7 +3,6 @@
 The stuff below are things I either can't automate or haven't yet spent the time to automate.
 
 ## System Preferences
-- Uncheck `Scroll direction: Natural` in System Preferences > Trackpad > Scroll & Zoom, because it's anything but natural
 - Set `Show Previews` to `Never` in `Notifications`
 
 ## 1Password
@@ -11,7 +10,9 @@ The stuff below are things I either can't automate or haven't yet spent the time
 - Add browser extensions of choice
 
 ## Code
+- Install C# Dev Kit extension
 - Install Go extension
+- Install MonoGame extension
 
 ## Docker
 - Launch Docker so it installs the `docker` CLI
@@ -20,6 +21,9 @@ The stuff below are things I either can't automate or haven't yet spent the time
 
 ## Finder
 - Add all the extra folders to the sidebar
+
+## Safari
+- Disable AutoFill (Settings > AutoFill; uncheck `User names and passwords` and `Credit cards`)
 
 ## Slack
 - Sign into workspaces (or, since you probably only use Slack for work, pretend to forget to)
