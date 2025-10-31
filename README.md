@@ -11,10 +11,9 @@ This repo has the install scripts and dotfiles I use to bootstrap and configure 
 
 This is my kit (and what `./install.sh` installs):
 
-- Homebrew (duh)
-- .NET SDK
+### Installed via Homebrew
+
 - 1Password
-- AWS CLI
 - Delta highlighter for Git
 - Discord
 - Docker
@@ -22,14 +21,22 @@ This is my kit (and what `./install.sh` installs):
 - Git
 - GitHub CLI
 - GitHub Desktop
-- Google Chrome
-- Go
-- jq
 - Mise
 - Slack
 - Starship.rs
 - Visual Studio Code
 - Zoom
+
+### Installed via mise
+
+- AWS CLI
+- Go
+- jq
+- Node
+
+### Other Tools
+
+- hyphen CLI
 
 ## How To Use This
 
