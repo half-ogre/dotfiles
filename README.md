@@ -26,6 +26,7 @@ This is my kit (and what `./install.sh` installs):
 - Postico
 - Slack
 - Starship.rs
+- Tailscale
 - Visual Studio Code
 - Zoom
 

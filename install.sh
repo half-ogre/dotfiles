@@ -27,6 +27,7 @@ install_homebrew_cask "Postgres.app" postgres-unofficial
 install_homebrew_cask "Postico" postico
 install_homebrew_cask "Slack" slack
 install_homebrew_formulae "Starship prompt" starship
+install_homebrew_cask "Tailscale" tailscale-app
 install_homebrew_cask "Visual Studio Code" visual-studio-code
 install_homebrew_cask "Zoom" zoom
 
