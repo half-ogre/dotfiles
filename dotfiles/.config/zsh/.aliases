@@ -10,6 +10,6 @@ else
     alias egrep="egrep --color=auto"
 fi
 
-alias zshup="source ~/.zshrc"
+alias zshup="source ~/.zshenv && source ~/.zprofile && source ~/.zshrc"
 
 alias hx='hyphen'
