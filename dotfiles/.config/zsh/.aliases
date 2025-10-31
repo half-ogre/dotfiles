@@ -11,5 +11,3 @@ else
 fi
 
 alias zshup="source ~/.zshrc"
-
-alias use-aws-anglicangeek="export AWS_PROFILE=anglicangeek"
