@@ -71,3 +71,5 @@ ${0:a:h}/scripts/fix-scroll-direction.sh
 echo ""
 
 echo "Install finished"
+echo ""
+echo "Run 'zshup' to reload your shell configuration"
