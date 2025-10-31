@@ -23,6 +23,8 @@ install_homebrew_formulae "Git" git
 install_homebrew_formulae "GitHub CLI" gh
 install_homebrew_cask "GitHub Desktop" github
 install_homebrew_formulae "mise" mise
+install_homebrew_cask "Postgres.app" postgres-unofficial
+install_homebrew_cask "Postico" postico
 install_homebrew_cask "Slack" slack
 install_homebrew_formulae "Starship prompt" starship
 install_homebrew_cask "Visual Studio Code" visual-studio-code

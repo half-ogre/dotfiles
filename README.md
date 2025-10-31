@@ -22,6 +22,8 @@ This is my kit (and what `./install.sh` installs):
 - GitHub CLI
 - GitHub Desktop
 - Mise
+- Postgres.app
+- Postico
 - Slack
 - Starship.rs
 - Visual Studio Code
