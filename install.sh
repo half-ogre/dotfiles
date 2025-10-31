@@ -71,6 +71,17 @@ ln -fs "${0:a:h}/dotfiles/.config/zsh/.zshrc" "${HOME}/.zshrc"
 # Create mise symlink
 ln -fs "${0:a:h}/dotfiles/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
 
+# Install hyphen CLI if not installed
+echo "Checking to see if hyphen CLI is installed ..."
+if [ -f "${HOME}/.local/bin/hyphen" ]; then
+  echo "hyphen CLI is already installed"
+else
+  echo "Installing hyphen CLI ..."
+  /bin/bash -c "$(curl -fsSL https://cdn.hyphen.ai/install/install.sh)"
+  echo "hyphen CLI is now installed"
+fi
+echo ""
+
 # Install mise tools
 echo "Installing mise tools"
 mise install

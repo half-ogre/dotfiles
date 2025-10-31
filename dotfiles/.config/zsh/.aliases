@@ -11,3 +11,5 @@ else
 fi
 
 alias zshup="source ~/.zshrc"
+
+alias hx='hyphen'
