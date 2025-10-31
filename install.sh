@@ -57,13 +57,6 @@ echo ""
 # Create .zshenv symlink
 ln -fs "${0:a:h}/dotfiles/.zshenv" "${HOME}/.zshenv"
 
-# Create AWS symlinks
-if ! [ -L "${HOME}/.aws/config" ]; then
-  echo "Symlinking AWS config"
-  mkdir -p ${HOME}/.aws
-  ln -fs "${0:a:h}/dotfiles/.config/aws/config" "${HOME}/.aws/config"
-fi
-
 # Create Git symlinks
 ln -fs "${0:a:h}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 
