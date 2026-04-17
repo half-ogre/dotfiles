@@ -58,6 +58,10 @@ ln -fs "${0:a:h}/dotfiles/.config/zsh/.zshrc" "${HOME}/.zshrc"
 mkdir -p "${HOME}/.config/mise"
 ln -fs "${0:a:h}/dotfiles/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
 
+# Create Ghostty symlink
+mkdir -p "${HOME}/.config/ghostty"
+ln -fs "${0:a:h}/dotfiles/.config/ghostty/config" "${HOME}/.config/ghostty/config"
+
 # Install hyphen CLI if not installed
 echo "Checking to see if hyphen CLI is installed ..."
 if [ -f "${HOME}/.local/bin/hyphen" ]; then
