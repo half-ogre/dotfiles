@@ -99,6 +99,10 @@ echo ""
 "${0:a:h}/scripts/fix-scroll-direction.sh"
 echo ""
 
+# Import Terminal profile
+"${0:a:h}/scripts/import-terminal-profile.sh"
+echo ""
+
 echo "Install finished"
 echo ""
 echo "Run 'zshup' to reload your shell configuration"
