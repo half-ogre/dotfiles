@@ -9,6 +9,9 @@ The stuff below are things I either can't automate or haven't yet spent the time
 - Sign in to 1Password account; (you have that Emergency Kit handy, right!?)
 - Add browser extensions of choice
 
+## Center Stage
+- Set up Center Stage background for video calls
+
 ## Code
 - Install C# Dev Kit extension
 - Install Go extension
