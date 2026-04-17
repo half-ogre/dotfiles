@@ -14,12 +14,15 @@ else
   echo "Homebrew is already installed"
 fi
 
+# Prefer each tool's prescribed installation method over Homebrew unless
+# Homebrew is the vendor-recommended path. See install.md for the chosen
+# method per tool.
 # install_homebrew_cask "1Password" 1password
-# install_homebrew_formulae "Delta highlighter for Git" git-delta
+install_homebrew_formulae "Delta highlighter for Git" git-delta
 # install_homebrew_cask "Discord" discord
 # install_homebrew_cask "Docker" docker
 # install_homebrew_cask "Fira Code font" font-fira-code-nerd-font
-# install_homebrew_formulae "Git" git
+install_homebrew_formulae "Git" git
 # install_homebrew_formulae "GitHub CLI" gh
 # install_homebrew_cask "GitHub Desktop" github
 # install_homebrew_formulae "mise" mise
