@@ -32,3 +32,6 @@ The stuff below are things I either can't automate or haven't yet spent the time
 - Launch Tailscale and allow kernel extension if prompted (System Settings → Privacy & Security)
 - Sign in via Apple account
 - Configure your network settings and exit nodes as needed
+
+## Terminal
+- Import `/assets/drew-terminal-profile.terminal` into Terminal and make it the default (this assumes you have Fira Code Nerd Font installed)
