@@ -68,6 +68,18 @@ else
 fi
 echo ""
 
+# Install mise if not installed
+echo "Checking to see if mise is installed ..."
+export PATH="$HOME/.local/bin:$PATH"
+if ! command -v mise &> /dev/null; then
+  echo "Installing mise ..."
+  curl https://mise.run | sh
+  echo "mise is now installed"
+else
+  echo "mise is already installed"
+fi
+echo ""
+
 # Install mise tools
 echo "Installing mise tools"
 mise install
