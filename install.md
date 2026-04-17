@@ -14,9 +14,10 @@ unless Homebrew is the method the vendor recommends.
 - Google Chrome via https://www.google.com/chrome/
 - Ghostty via https://ghostty.org/download
 - git-delta via `brew install git-delta`
+- Discord via https://discord.com/
+- Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
 
 ## TBD
-- Discord
 - Docker
 - Fira Code Nerd Font
 - GitHub CLI (gh)
@@ -24,6 +25,5 @@ unless Homebrew is the method the vendor recommends.
 - Postgres.app
 - Postico
 - Slack
-- Starship
 - Tailscale
 - Zoom

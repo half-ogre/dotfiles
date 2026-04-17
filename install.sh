@@ -68,9 +68,21 @@ else
 fi
 echo ""
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# Install Starship if not installed
+echo "Checking to see if Starship is installed ..."
+if ! command -v starship &> /dev/null; then
+  echo "Installing Starship ..."
+  curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y
+  echo "Starship is now installed"
+else
+  echo "Starship is already installed"
+fi
+echo ""
+
 # Install mise if not installed
 echo "Checking to see if mise is installed ..."
-export PATH="$HOME/.local/bin:$PATH"
 if ! command -v mise &> /dev/null; then
   echo "Installing mise ..."
   curl https://mise.run | sh
