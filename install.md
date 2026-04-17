@@ -21,6 +21,7 @@ unless Homebrew is the method the vendor recommends.
 - OrbStack via https://orbstack.dev/download
 - Postgres.app via https://postgresapp.com/downloads.html/
 - Postico via https://eggerapps.at/postico2/
+- Pumble via https://pumble.com/apps
 - Slack via https://slack.com/downloads/mac
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
 - Tailscale via https://tailscale.com/download/mac
