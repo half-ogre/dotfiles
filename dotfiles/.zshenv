@@ -9,3 +9,8 @@ export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 
 export PATH=$PATH:$(mise exec -- go env GOPATH)/bin
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+if command -v code > /dev/null 2>&1; then
+  export EDITOR="code --wait"
+  export VISUAL="code --wait"
+fi
