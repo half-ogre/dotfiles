@@ -1,2 +1,7 @@
+[env_var.HYPHEN_PROFILE]
+symbol = "⬡ "
+style = "bold #FF8C00"
+format = "on [$symbol$env_value]($style) "
+
 [kubernetes]
 disabled = false

@@ -45,3 +45,4 @@ eval "$(starship init zsh)"
 
 eval "$(mise activate zsh)"
 
+alias hx='hyphen'
