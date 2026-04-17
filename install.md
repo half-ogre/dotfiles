@@ -16,10 +16,10 @@ unless Homebrew is the method the vendor recommends.
 - git-delta via `brew install git-delta`
 - Discord via https://discord.com/
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
+- Fira Code Nerd Font via `brew install --cask font-fira-code-nerd-font` (per https://github.com/ryanoasis/nerd-fonts#homebrew-fonts)
 
 ## TBD
 - Docker
-- Fira Code Nerd Font
 - GitHub CLI (gh)
 - GitHub Desktop
 - Postgres.app
