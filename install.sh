@@ -25,6 +25,10 @@ install_homebrew_formulae "GitHub CLI" gh
 
 echo ""
 
+# Configure gh to clone via SSH
+gh config set git_protocol ssh
+echo ""
+
 # Create .zshenv symlink
 ln -fs "${0:a:h}/dotfiles/.zshenv" "${HOME}/.zshenv"
 
