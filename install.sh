@@ -6,9 +6,10 @@ echo "Install started"
 echo ""
 
 echo "Checking to see if Homebrew is installed ..."
-if [ $(brew -v | grep -c "command not found") -eq 1 ]; then
+if ! command -v brew &> /dev/null; then
   echo "Installing Homebrew ..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   echo "Homebrew is now installed"
 else
   echo "Homebrew is already installed"
@@ -46,13 +47,14 @@ ln -fs "${0:a:h}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -fs "${0:a:h}/dotfiles/.config/starship.toml" "${HOME}/.config/starship.toml"
 
 # Create zsh symlinks
-mkdir -p ${HOME}/.config/zsh
+mkdir -p "${HOME}/.config/zsh"
 ln -fs "${0:a:h}/dotfiles/.config/zsh/.aliases" "${HOME}/.config/zsh/.aliases"
 ln -fs "${0:a:h}/dotfiles/.config/zsh/.zprofile" "${HOME}/.config/zsh/.zprofile"
 ln -fs "${0:a:h}/dotfiles/.config/zsh/.zshrc" "${HOME}/.config/zsh/.zshrc"
 ln -fs "${0:a:h}/dotfiles/.config/zsh/.zshrc" "${HOME}/.zshrc"
 
 # Create mise symlink
+mkdir -p "${HOME}/.config/mise"
 ln -fs "${0:a:h}/dotfiles/.config/mise/config.toml" "${HOME}/.config/mise/config.toml"
 
 # Install hyphen CLI if not installed
@@ -73,7 +75,7 @@ echo "Installed mise tools"
 echo ""
 
 # Fix scrolling direction
-${0:a:h}/scripts/fix-scroll-direction.sh
+"${0:a:h}/scripts/fix-scroll-direction.sh"
 echo ""
 
 echo "Install finished"
