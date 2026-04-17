@@ -8,7 +8,7 @@ export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 [ -f "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.local/bin:$PATH"
-export PATH=$PATH:$(mise exec -- go env GOPATH)/bin
+export PATH="$PATH:$HOME/go/bin"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 if command -v code > /dev/null 2>&1; then
