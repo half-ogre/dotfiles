@@ -44,6 +44,7 @@ ln -fs "${0:a:h}/dotfiles/.zshenv" "${HOME}/.zshenv"
 ln -fs "${0:a:h}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 
 # Create Starship symlinks
+mkdir -p "${HOME}/.config"
 ln -fs "${0:a:h}/dotfiles/.config/starship.toml" "${HOME}/.config/starship.toml"
 
 # Create zsh symlinks
