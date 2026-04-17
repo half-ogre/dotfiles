@@ -1,5 +1,5 @@
 [tools]
-awscli = "2.31"
+awscli = "2.34"
 go = "1.25"
 jq = "1.8"
 node = "22"
