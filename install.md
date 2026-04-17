@@ -17,13 +17,11 @@ unless Homebrew is the method the vendor recommends.
 - Discord via https://discord.com/
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
 - Fira Code Nerd Font via `brew install --cask font-fira-code-nerd-font` (per https://github.com/ryanoasis/nerd-fonts#homebrew-fonts)
-
-## TBD
-- Docker
-- GitHub CLI (gh)
-- GitHub Desktop
-- Postgres.app
-- Postico
-- Slack
-- Tailscale
-- Zoom
+- GitHub CLI (gh) via `brew install gh` (per https://github.com/cli/cli#installation)
+- Docker via https://www.docker.com/products/docker-desktop/
+- GitHub Desktop via https://desktop.github.com/
+- Postgres.app via https://postgresapp.com/
+- Postico via https://eggerapps.at/postico2/
+- Slack via https://slack.com/downloads/mac
+- Tailscale via https://tailscale.com/download/mac
+- Zoom via https://zoom.us/download

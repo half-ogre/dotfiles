@@ -24,7 +24,7 @@ install_homebrew_formulae "Delta highlighter for Git" git-delta
 # install_homebrew_cask "Docker" docker
 install_homebrew_cask "Fira Code font" font-fira-code-nerd-font
 install_homebrew_formulae "Git" git
-# install_homebrew_formulae "GitHub CLI" gh
+install_homebrew_formulae "GitHub CLI" gh
 # install_homebrew_cask "GitHub Desktop" github
 # install_homebrew_formulae "mise" mise
 # install_homebrew_cask "Postgres.app" postgres-unofficial
