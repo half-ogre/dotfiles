@@ -8,7 +8,6 @@ unless Homebrew is the method the vendor recommends.
 - Claude via https://claude.com/download
 - Claude Code via `curl -fsSL https://claude.ai/install.sh | bash`
 - Discord via https://discord.com/
-- Docker via https://www.docker.com/products/docker-desktop/
 - Fira Code Nerd Font via `brew install --cask font-fira-code-nerd-font` (per https://github.com/ryanoasis/nerd-fonts#homebrew-fonts)
 - Ghostty via https://ghostty.org/download
 - Git via `brew install git` (per https://git-scm.com/install/mac)
@@ -18,7 +17,8 @@ unless Homebrew is the method the vendor recommends.
 - Google Chrome via https://www.google.com/chrome/
 - Homebrew via `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - mise via `curl https://mise.run | sh`
-- Postgres.app via https://postgresapp.com/
+- OrbStack via https://orbstack.dev/download
+- Postgres.app via https://postgresapp.com/downloads.html/
 - Postico via https://eggerapps.at/postico2/
 - Slack via https://slack.com/downloads/mac
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`

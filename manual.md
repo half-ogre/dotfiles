@@ -14,10 +14,9 @@ The stuff below are things I either can't automate or haven't yet spent the time
 - Install Go extension
 - Install MonoGame extension
 
-## Docker
-- Launch Docker so it installs the `docker` CLI
-- Give it privileged access when it prompts for it
-- Adjust resources as needed
+## OrbStack
+- Launch OrbStack so it installs the `docker` and `docker-compose` CLIs
+- Adjust resources as needed in OrbStack settings
 
 ## Finder
 - Add all the extra folders to the sidebar
