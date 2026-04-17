@@ -17,6 +17,7 @@ unless Homebrew is the method the vendor recommends.
 - Google Chrome via https://www.google.com/chrome/
 - Homebrew via `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - mise via `curl https://mise.run | sh`
+- Microsoft Office via https://portal.office.com/account/ (sign in with business M365 account)
 - OrbStack via https://orbstack.dev/download
 - Postgres.app via https://postgresapp.com/downloads.html/
 - Postico via https://eggerapps.at/postico2/
