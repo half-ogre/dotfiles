@@ -45,6 +45,3 @@ eval "$(starship init zsh)"
 
 eval "$(mise activate zsh)"
 
-# === PATH ===
-
-export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
