@@ -9,37 +9,9 @@ This repo has the install scripts and dotfiles I use to bootstrap and configure 
 
 ## The Goods
 
-This is my kit (and what `./install.sh` installs):
-
-### Installed via Homebrew
-
-- 1Password
-- Delta highlighter for Git
-- Discord
-- Docker
-- Fira Code Nerd Font
-- Git
-- GitHub CLI
-- GitHub Desktop
-- Mise
-- Postgres.app
-- Postico
-- Slack
-- Starship.rs
-- Tailscale
-- Visual Studio Code
-- Zoom
-
-### Installed via mise
-
-- AWS CLI
-- Go
-- jq
-- Node
-
-### Other Tools
-
-- hyphen CLI
+See [install.md](./install.md) for the tools and apps I use and the chosen
+install method for each. `./install.sh` automates everything it can; the rest
+are vendor-direct downloads tracked in the same file.
 
 ## How To Use This
 
