@@ -27,6 +27,7 @@ unless Homebrew is the method the vendor recommends.
 - Pumble via https://pumble.com/apps
 - Slack via https://slack.com/downloads/mac
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
+- Steam via https://store.steampowered.com/about/
 - Tailscale via https://tailscale.com/download/mac
 - Visual Studio Code via https://code.visualstudio.com/Download
 - Zoom via https://zoom.us/download
