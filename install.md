@@ -18,6 +18,7 @@ unless Homebrew is the method the vendor recommends.
 - GitHub Desktop via https://desktop.github.com/
 - Google Chrome via https://www.google.com/chrome/
 - Homebrew via `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Loom via https://www.loom.com/download
 - Microsoft Office via https://portal.office.com/account/ (sign in with business M365 account)
 - mise via `curl https://mise.run | sh`
 - mkcert via `brew install mkcert` (per https://github.com/FiloSottile/mkcert#installation)
