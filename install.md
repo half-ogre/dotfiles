@@ -7,6 +7,7 @@ unless Homebrew is the method the vendor recommends.
 - 1Password via https://1password.com/downloads/mac
 - Acorn via the Mac App Store
 - Adobe Creative Cloud via https://creativecloud.adobe.com/apps/download/creative-cloud (sign in, install individual apps from the Creative Cloud desktop app)
+- Bruno via `brew install --cask bruno` (per https://docs.usebruno.com/get-started/bruno-basics/download)
 - Claude via https://claude.com/download
 - Claude Code via `curl -fsSL https://claude.ai/install.sh | bash`
 - Discord via https://discord.com/

@@ -18,6 +18,7 @@ fi
 # Prefer each tool's prescribed installation method over Homebrew unless
 # Homebrew is the vendor-recommended path. See install.md for the chosen
 # method per tool.
+install_homebrew_cask "Bruno" bruno
 install_homebrew_formulae "Delta highlighter for Git" git-delta
 install_homebrew_cask "Fira Code font" font-fira-code-nerd-font
 install_homebrew_formulae "Git" git
