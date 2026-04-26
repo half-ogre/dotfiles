@@ -32,4 +32,5 @@ unless Homebrew is the method the vendor recommends.
 - Steam via https://store.steampowered.com/about/
 - Tailscale via https://tailscale.com/download/mac
 - Visual Studio Code via https://code.visualstudio.com/Download
+- Xcode via the Mac App Store
 - Zoom via https://zoom.us/download
