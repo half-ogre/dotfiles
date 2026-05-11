@@ -11,6 +11,7 @@ unless Homebrew is the method the vendor recommends.
 - Claude via https://claude.com/download
 - Claude Code via `curl -fsSL https://claude.ai/install.sh | bash`
 - Discord via https://discord.com/
+- Dungeondraft via the download URL in 1Password (license also in 1Password; purchased through Humble Bundle per https://dungeondraft.net/)
 - Fira Code Nerd Font via `brew install --cask font-fira-code-nerd-font` (per https://github.com/ryanoasis/nerd-fonts#homebrew-fonts)
 - Ghostty via https://ghostty.org/download
 - Git via `brew install git` (per https://git-scm.com/install/mac)
