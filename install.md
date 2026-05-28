@@ -8,6 +8,7 @@ unless Homebrew is the method the vendor recommends.
 - Acorn via the Mac App Store
 - Adobe Creative Cloud via https://creativecloud.adobe.com/apps/download/creative-cloud (sign in, install individual apps from the Creative Cloud desktop app)
 - Bruno via `brew install --cask bruno` (per https://docs.usebruno.com/get-started/bruno-basics/download)
+- Bun via `curl -fsSL https://bun.sh/install | bash` (per https://bun.sh/docs/installation)
 - Claude via https://claude.com/download
 - Claude Code via `curl -fsSL https://claude.ai/install.sh | bash`
 - Discord via https://discord.com/
