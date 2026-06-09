@@ -34,6 +34,7 @@ unless Homebrew is the method the vendor recommends.
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
 - Steam via https://store.steampowered.com/about/
 - Tailscale via https://tailscale.com/download/mac
+- tmux via `brew install tmux` (per https://github.com/tmux/tmux/wiki/Installing#binary-packages)
 - Visual Studio Code via https://code.visualstudio.com/Download
 - Xcode via the Mac App Store
 - Zoom via https://zoom.us/download
