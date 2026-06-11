@@ -30,6 +30,7 @@ unless Homebrew is the method the vendor recommends.
 - Postgres.app via https://postgresapp.com/downloads.html/
 - Postico via https://eggerapps.at/postico2/
 - Pumble via https://pumble.com/apps
+- Rust via `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` (per https://www.rust-lang.org/tools/install)
 - Slack via https://slack.com/downloads/mac
 - Starship via `curl -sS https://starship.rs/install.sh | sh -s -- -b "$HOME/.local/bin" -y`
 - Steam via https://store.steampowered.com/about/
