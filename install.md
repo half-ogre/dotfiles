@@ -26,6 +26,7 @@ unless Homebrew is the method the vendor recommends.
 - Microsoft Office via https://portal.office.com/account/ (sign in with business M365 account)
 - mise via `curl https://mise.run | sh`
 - mkcert via `brew install mkcert` (per https://github.com/FiloSottile/mkcert#installation)
+- mongosh via `brew install mongosh` (per https://www.mongodb.com/docs/mongodb-shell/install/)
 - OrbStack via https://orbstack.dev/download
 - pdfcpu via `brew install pdfcpu` (per https://pdfcpu.io/getting_started/install_cli/)
 - Postgres.app via https://postgresapp.com/downloads.html/
