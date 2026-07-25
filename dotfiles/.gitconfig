@@ -1,5 +1,5 @@
 [user]
-	name = half-ogre
+	name = Drew Miller
 	email = half-ogre@users.noreply.github.com
 [init]
 	defaultBranch = main 
@@ -49,3 +49,5 @@
   commit-decoration-style = bold yellow box ul
   file-style = bold yellow ul
   file-decoration-style = none
+[url "git@github.com:"]
+	insteadOf = https://github.com/

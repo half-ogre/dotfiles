@@ -46,3 +46,13 @@ eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
 
 alias hx='hyphen'
+
+# bun completions
+[ -s "/Users/drew/.bun/_bun" ] && source "/Users/drew/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Entire CLI shell completion
+autoload -Uz compinit && compinit && source <(entire completion zsh)

@@ -17,3 +17,4 @@ if command -v code > /dev/null 2>&1; then
 fi
 
 [ -f "${HOME}/.orbstack/shell/init.zsh" ] && source "${HOME}/.orbstack/shell/init.zsh"
+. "$HOME/.cargo/env"
